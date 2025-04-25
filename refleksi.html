@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quizStyle.css">
+</head>
+<body>
+    <header>
+        <a href="home.html">
+            <button class="back"><img src="back-button.png" alt="tombol-kembali"></button>
+        </a>
+        <img src="cloud.png" alt="" class="awan">
+        <div class="tag-wrapper">
+            <h1 class="tag">Refleksi time</h1>
+            <img src="underline.png" alt="underline" class="underline-img">
+        </div>
+    </header>
+    <main>
+        <img src="background-refleksi.png" alt="" class="quiz-bg">
+        <div class="quiz-container">
+            <p class="quiz-text">question 1</p>
+            <div class="quiz-buttons">
+                <button class="ya" id="yesBtn">Benar</button>
+                <button class="tidak" id="noBtn">Salah</button>
+            </div>
+            <button class="nextbtn" id="nextBtn">Next</button>
+            </div>
+
+          <div id="resultBox" class="hidden">
+            <p id="scoreResult"></p>
+            <p id="gradeResult"></p>
+          </div>
+    </main>
+</body>
+<script src="refleksiScript.jsx"></script>
+</html>

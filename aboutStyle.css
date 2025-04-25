@@ -1,0 +1,339 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    }
+    
+    body {
+        height: auto;
+        background-image: url("asset.png");
+        background-color :#F7B500;
+        background-size: cover;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    .container {
+        height: auto;
+        background-color: transparent;
+        text-align: center;
+        padding: 20px;
+        max-width: 600px; 
+        min-height: 100vh;
+    }
+    
+    
+    .wrapper-brand {
+        width: 200px; 
+        height: auto;
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 1vh;
+    }
+    
+    .brand {
+        position: absolute;
+        top: 4vh;
+        left: 15vh;
+        transform: translate(-50%, -50%);
+        font-size: 16px;
+        color: #6b4404;
+        font-weight: bold;
+        font-family: 'Alphakind', sans-serif;
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    }
+    
+    .awan{
+        width: 25vh; 
+        height: auto;
+        display: block;
+        position: absolute;
+        top: 1px;
+        right: 1px;
+    }
+    
+    .tag-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    @font-face {
+        font-family: 'Alphakind';
+        src: url('fonts/alphakind.ttf') format('truetype');
+    }
+    
+    .tag {
+        position: relative;
+        justify-content: center;
+        margin-top: 40vh;
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: bold;
+        font-family: 'Alphakind', sans-serif;
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+        margin-bottom: -1vh; 
+    }
+    
+    .underline-img {
+        position: relative;
+        justify-content: center;
+        width: 200px;
+        height: auto;
+        margin-bottom: -10vh;
+    }
+    
+    
+    main {
+        display: block;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; /* atau center */
+        padding-top: 50px;
+    }
+    
+    
+    main img{
+        width: 300px;
+    }
+    
+    main p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        max-width: 250px;
+        text-align: justify;
+        padding: 5px 10px;
+        border-radius: 15px;
+        color: #4a2c0a;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    main p:hover {
+        transform: scale(1.02);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    }
+    
+    
+    .content-wrapper {
+        display: flex;
+        flex-direction: row; /* default, boleh dihapus */
+        align-items: center;
+        justify-content: center;
+        gap: 20px; /* Jarak antar elemen */
+        flex-wrap: wrap; /* Biar responsif di layar kecil */
+    }
+    
+    
+    
+    button {
+        background: linear-gradient(to right, #ffcc70, #ff9a3c);
+        color: #6b4404;
+        border: none;
+        border-radius: 30px;
+        padding: 12px 30px;
+        font-size: 16px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        transition: all 0.3s ease;
+        margin-top: 20px;
+    }
+    
+    button:hover {
+        background: linear-gradient(to right, #ff9a3c, #ffcc70);
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    }
+    
+    footer {
+        margin-top: -40px;
+        border-radius: 15px;
+        background: linear-gradient(135deg, #C4900A, #f4d177);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+    
+    nav img {
+        width: 24px;
+        height: 24px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    
+    nav a:hover img {
+        transform: scale(1.2) rotate(10deg);
+        filter: brightness(1.2) drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.4));
+    }
+    
+    @media (max-width: 600px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: auto;
+        display: flex;
+        flex-direction: column; /* Mengatur layout menjadi kolom */
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+      
+    .container {
+        flex: 1; /* Memberikan ruang yang tersisa ke container, agar footer tetap di bawah */
+        max-width: 100%;
+        padding: 0px;
+        min-height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+      
+        .wrapper-brand {
+          width: 120px;
+          top: 10px;
+          left: 10px;
+        }
+      
+        .brand {
+          font-size: 12px;
+          left: 8vh; /* Bisa disesuaikan agar tetap proporsional */
+          top: 17px;
+        }
+      
+        .awan {
+          width: 10vh;
+        }
+      
+        .tag {
+          font-size: 24px;
+          margin-top: 5vh;
+        }
+      
+        .underline-img {
+          width: 150px;
+          margin-bottom: -5vh;
+        }
+        
+        main {
+            padding-bottom: 10px; /* perkecil jika terlalu besar */
+        }
+        main img {
+          width: 90%;
+          max-width: 280px;
+        }
+      
+        main p {
+          font-size: 13px;
+          max-width: 90vw;
+          padding: 10px;
+          margin: 0 auto;
+        }
+      
+        .content-wrapper {
+          flex-direction: column;
+          gap: 16px;
+          align-items: center;
+        }
+      
+        button {
+          width: 100%;
+          font-size: 14px;
+          padding: 12px 20px;
+        }
+        
+        .container {
+            flex: 10px; /* Memberikan ruang yang tersisa ke container, agar footer tetap di bawah */
+            padding: 20px;
+            margin-bottom: -20px;
+        }
+        footer {        
+            margin-top: -40px;
+            flex-shrink: 0;
+            background-image: url("footer-background.png");
+            background-size: 120%;
+            background-position: center;
+            width: 100%;
+            height: 70px;
+            padding: 10px 0;
+            border-radius: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box; /* Agar padding tidak mempengaruhi lebar */
+        }
+    
+      
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: center; /* Pusatkan biar lebih rapat */
+            gap: 8px; /* Ubah sesuai kebutuhan, misalnya 8px untuk lebih rapat */
+            width: 100%;
+            flex-wrap: wrap;
+        }
+    
+        nav a {
+            margin: 0; /* Menghilangkan margin */
+            padding: 8px 12px; /* Menambah padding untuk tombol */
+            display: inline-block; /* Agar tombol tetap inline */
+        }
+    
+        nav img {
+            width: 20px;
+            height: 20px;
+        }
+    
+        /* Tombol Home */
+        nav a.about {
+            font-weight: bold;
+            color: #6b4404;
+            background-color: #fff3c4;
+            padding: 6px 12px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+    
+        nav a.home:hover {
+            background-color: #ffec9f;
+            transform: scale(1.1);
+        }
+    
+      }
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
