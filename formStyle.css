@@ -186,9 +186,13 @@ nav a:hover img {
         width: 10vh;
     }
 
+    .tag-wrapper {
+        margin-top: 5vh;
+    }
+
     .tag {
         font-size: 24px;
-        margin-top: 5vh;
+        margin-top: 15vh;
     }
 
     .underline-img {
