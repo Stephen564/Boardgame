@@ -100,11 +100,11 @@ main img {
 }
 
     button {
-        background-color: #F4DA8C; /* Coklat */
+        background-color: #F4DA8C; 
         color: rgb(0, 0, 0);
-        border: 2px solid black; /* Stroke hitam */
+        border: 2px solid black; 
         border-radius: 10px;
-        padding: 12px 30px; /* Default padding untuk ukuran desktop */
+        padding: 12px 30px; 
         font-size: 16px;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
@@ -116,7 +116,7 @@ main img {
 
 
 button:hover {
-    background-color: #c09c30; /* Coklat lebih gelap saat hover */
+    background-color: #c09c30; 
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
@@ -190,7 +190,7 @@ nav a:hover img {
         z-index: 10;
         border-radius: 8px;
         transition: transform 0.3s ease;
-        box-shadow: none; /* Menghilangkan shadow */
+        box-shadow: none; 
     }
     
     .back img {
@@ -226,7 +226,7 @@ nav a:hover img {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        padding-top: 10px; /* nilai kecil */
+        padding-top: 10px; 
         margin-top: -40px;
         position: relative;
         z-index: 0;
@@ -247,9 +247,9 @@ nav a:hover img {
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 2;
-        font-size: 16px; /* sesuaikan */
+        font-size: 16px; 
         font-weight: bold;
-        color: #000000; /* pastikan kontras dengan background gambar */
+        color: #000000; 
         text-align: center;
         padding: 10px;
         background-color: transparent;
@@ -260,13 +260,13 @@ nav a:hover img {
         width: 200px;
         margin-top: 60px;
         position: absolute;
-        top: 55%; /* Sesuaikan biar pas di bawah <p> */
+        top: 55%; 
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 2;
         display: flex;
-        flex-direction: column; /* ini bikin tombol vertikal */
-        gap: -20px; /* jarak antar tombol */
+        flex-direction: column; 
+        gap: -20px; 
       }
       .hidden {
         display: none;
@@ -286,7 +286,7 @@ nav a:hover img {
         margin-top: -10px;
         margin-left: 130px;
         width:100px ;
-        display: none; /* awalnya hidden, muncul lewat JS */
+        display: none; 
     }
 
     .result-box {
