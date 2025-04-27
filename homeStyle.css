@@ -93,7 +93,7 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* atau center */
+    justify-content: flex-start;
     padding-top: 50px;
 }
 
@@ -104,6 +104,7 @@ main {
 
 main img{
     width: 300px;
+    border: 3px solid #6b4404;
 }
 
 main p {
@@ -126,11 +127,11 @@ main p:hover {
 
 .content-wrapper {
     display: flex;
-    flex-direction: row; /* default, boleh dihapus */
+    flex-direction: row; 
     align-items: center;
     justify-content: center;
-    gap: 20px; /* Jarak antar elemen */
-    flex-wrap: wrap; /* Biar responsif di layar kecil */
+    gap: 20px; 
+    flex-wrap: wrap; 
 }
 
 
@@ -197,7 +198,7 @@ body, html {
     padding: 0;
     height: 100vh;
     display:inline-block;
-    flex-direction: column; /* Mengatur layout menjadi kolom */
+    flex-direction: column; 
 }
 
 body {
@@ -206,7 +207,7 @@ body {
 }
   
 .container {
-    flex: 1; /* Memberikan ruang yang tersisa ke container, agar footer tetap di bawah */
+    flex: 1; 
     max-width: 100%;
     padding: 0px;
     min-height: auto;
@@ -214,7 +215,7 @@ body {
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Dorong main ke bawah */
+    justify-content: flex-end; 
     height: 100vh;
 
 }
@@ -227,7 +228,7 @@ body {
   
     .brand {
       font-size: 12px;
-      left: 8vh; /* Bisa disesuaikan agar tetap proporsional */
+      left: 8vh; 
       top: 17px;
     }
   
@@ -276,7 +277,7 @@ body {
     }
     
     .container {
-        flex: 10px; /* Memberikan ruang yang tersisa ke container, agar footer tetap di bawah */
+        flex: 10px; 
         padding: 20px;
         margin-bottom: -20px;
     }
@@ -293,23 +294,23 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        box-sizing: border-box; /* Agar padding tidak mempengaruhi lebar */
+        box-sizing: border-box; 
     }
 
   
     nav {
         display: flex;
         flex-direction: row;
-        justify-content: center; /* Pusatkan biar lebih rapat */
-        gap: 8px; /* Ubah sesuai kebutuhan, misalnya 8px untuk lebih rapat */
+        justify-content: center; 
+        gap: 8px; 
         width: 100%;
         flex-wrap: wrap;
     }
 
     nav a {
-        margin: 0; /* Menghilangkan margin */
-        padding: 8px 12px; /* Menambah padding untuk tombol */
-        display: inline-block; /* Agar tombol tetap inline */
+        margin: 0; 
+        padding: 8px 12px; 
+        display: inline-block; 
     }
 
     nav img {
