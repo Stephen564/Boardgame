@@ -137,7 +137,7 @@ const questions = [
     if (score >= 15) {
         grade = 'Baik';
         gradeClass = 'good-grade';
-        imageSrc = 'gambar-baik.png'; // ganti sesuai lokasi gambar kamu
+        imageSrc = 'gambar-baik.png'; 
     } else if (score <= 14 && score >= 10) {
         grade = 'Cukup';
         gradeClass = 'medium-grade';
@@ -172,7 +172,7 @@ const questions = [
 
     // Tampilkan hasil
     resultBox.style.display = "block";
-    resultBox.innerHTML = ""; // bersihkan dulu biar tidak duplikat
+    resultBox.innerHTML = ""; 
     resultBox.appendChild(resultTitle);
     resultBox.appendChild(scoreResult);
     resultBox.appendChild(gradeResult);
