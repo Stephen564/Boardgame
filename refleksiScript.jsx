@@ -111,25 +111,25 @@ const questions = [
       }
   
       let grade = '';
-      let gradeClass = '';  // Menentukan kelas CSS yang akan diterapkan
+      let gradeClass = '';  
       if (score >= 10) {
           grade = 'tinggi';
-          gradeClass = 'poor-grade';  // Kelas untuk warna hijau
+          gradeClass = 'poor-grade';  
       } else if (score <=9 && score >= 6) {
           grade = 'sedang';
-          gradeClass = 'medium-grade';  // Kelas untuk warna kuning
+          gradeClass = 'medium-grade';  
       } else {
           grade = 'baik';
-          gradeClass = 'good-grade';  // Kelas untuk warna merah
+          gradeClass = 'good-grade';  
       }
   
-      // Menyembunyikan elemen quiz dan tombol Next
+      
       quizText.style.display = "none";
       yesBtn.style.display = "none";
       noBtn.style.display = "none";
       nextBtn.style.display = "none";
   
-      // Menambahkan judul "Hasil Quiz"
+      
       const resultTitle = document.createElement("h2");
       resultTitle.textContent = "Hasil Refleksi";
       resultTitle.style.fontSize = "24px";
@@ -137,16 +137,16 @@ const questions = [
       resultTitle.style.textAlign = "center";
       resultTitle.style.marginBottom = "20px";
   
-      // Menampilkan hasil di dalam quiz-container
+      
       resultBox.style.display = "block";
-      resultBox.insertBefore(resultTitle, scoreResult); // Menambahkan judul sebelum skor
+      resultBox.insertBefore(resultTitle, scoreResult); 
   
       scoreResult.textContent = `Skor Anda: ${score} dari ${questions.length}`;
       gradeResult.innerHTML = `Kategori: <span class="grade-text ${gradeClass}">${grade}</span>`;
   }
   
   
-  // Event listener
+  
   yesBtn.addEventListener("click", () => handleAnswer("Ya"));
   noBtn.addEventListener("click", () => handleAnswer("Tidak"));
   nextBtn.addEventListener("click", () => {
@@ -160,6 +160,6 @@ const questions = [
       }
   });
   
-  // Menampilkan pertanyaan pertama
+  
   showQuestion();
   
